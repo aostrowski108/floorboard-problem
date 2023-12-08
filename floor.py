@@ -43,7 +43,7 @@ def calculate_total_ways(conflict_list, height):
 
 def count_patterns(width, height):
     rows = generate_rows(width)
-    prefix_sums = [generate_prefix_sum(row) for row in rows]
+    prefix_sums = [generate_prefix_sum(row) for row in rows] 
     conflict_list = generate_conflict_list(prefix_sums)
     return calculate_total_ways(conflict_list, height)
 

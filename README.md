@@ -32,4 +32,4 @@ Calculate $F(32,10)$
 
 + As a general case, we can think of ```dp[x] = y```. In this scenario, y indicates the total number of ways to build the floor up to a certain height, with the last row being the row configuration corresponding to index x. It's the accumulated count of all valid stacking sequences of rows that end with this particular row configuration.
 
-+ The runtime of this function $O(m \cdot n \cdot k)$ where $m = $ ```len(height)```, $n = $ ```len(conflict_list)```, and $k = $ ```conflict_list[i]```
++ The runtime of this function $O(m \cdot n \cdot k)$ where $m =$ ```len(height)```, $n =$ ```len(conflict_list)```, and $k =$ ```conflict_list[i]```
