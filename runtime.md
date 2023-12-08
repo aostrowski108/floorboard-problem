@@ -16,7 +16,7 @@ $$a_{n} = a_{n-2} + a_{n-3} \quad a_{0} = 0 \quad a_{1} = 1 \quad a_{2} = 1$$
 
 $$A(x) := \sum_{n=0} a_{n}x^n$$
 
-$$\sum_{n=3} a_{n}x^n = \sum_{n=3} a_{n-2}x^n + \sum_{n=3} a_{n-3}x^n$$
+$$\sum_{n=3} a_{n} x^n = \sum_{n=3} a_{n-2} x^n + \sum_{n=3} a_{n-3} x^n$$
 
 $$A(x) - a_{0} - a_{1}x - a_{2}x^2 = x^2[A(x) - a_{0} - a_{1}x^2] + x^3A(x)$$
 
