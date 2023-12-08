@@ -23,3 +23,7 @@ $$A(x) - a_{0} - a_{1}x - a_{2}x^2 = x^2[A(x) - a_{0}] + x^3A(x)$$
 $$A(x) - x^2A(x) - x^3A(x) = x + x^2$$
 
 $$A(x) = \frac{x+x^2}{1-x^2-x^3}$$
+
+$$1 - x^2 - x^3$$ has roots:
+
+$$\frac{1}{3} \left(-1 + \left(\frac{1}{2} \left(25 - 3 \sqrt{69}\right)\right)^{\frac{1}{3}} + \left(\frac{1}{2} \left(25 + 3 \sqrt{69}\right)\right)^{\frac{1}{3}}\right)$$
