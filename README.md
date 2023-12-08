@@ -35,7 +35,7 @@ Calculate $F(32,10)$
 
 + As a general case, we can think of ```dp[x] = y```. In this scenario, y indicates the total number of ways to build the floor up to a certain height, with the last row being the row configuration corresponding to index x. It's the accumulated count of all valid stacking sequences of rows that end with this particular row configuration.
 
-+ Since ```len(conflict_list)``` and ```len(conflict_list[i])``` both have a worst case of $O(n \cdot 1.32^n)$ where $n = width$, the runtime would be $O(n^2 \cdot (1.32^n)^2 \cdot m) where $m = height$
++ Since ```len(conflict_list)``` and ```len(conflict_list[i])``` both have a worst case of $O(n \cdot 1.32^n)$ where $n = width$, the runtime would be $O(n^2 \cdot (1.32^n)^2 \cdot m)$ where $m = height$
 
 ### ```count_patterns(width, height)```
 + Finally, we put all of our functions together to find the final answer of $F(32,10) = 806844323190414$
