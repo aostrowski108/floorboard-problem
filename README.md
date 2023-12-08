@@ -40,4 +40,4 @@ Calculate $F(32,10)$
 ### ```count_patterns(width, height)```
 + Finally, we put all of our functions together to find the final answer of $F(32,10) = 806844323190414$
 
-+ Our final solution has a worst case runtime of $O(m \cdot n^2 \cdot (1.32^n)^2)$ where $m =$ ```max(height, max(len(prefix_sum)))``` since both ```calculate_total_ways(conflict_list, height)``` and ```generate_conflict_list(prefix_sums)``` have similar runtimes and are our bottlenecks.
++ Our final solution has a worst case runtime of $O(m \cdot n^2 \cdot (1.32^n)^2)$ where $m =$ ```max(height, min(len(prefix_sum)))``` since both ```calculate_total_ways(conflict_list, height)``` and ```generate_conflict_list(prefix_sums)``` have similar runtimes and are our bottlenecks.
