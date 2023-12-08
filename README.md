@@ -28,7 +28,7 @@ Calculate $F(32,10)$
 ### ```generate_conflict_list(prefix_sums)```
 + Since we have every possible row as a prefix sum, we can calculate a list for all viable patterns that can be adjacent to the row. To do this, we will loop through every prefix sum and check if at any point the two sets are disjoint. If they are, we know that they are a viable adjacent pattern and add it to the list. We will do this for every prefix sum and return a list of lists.
 
-+ Since ```len(prefix_sums)``` worst case is $=n \cdot 1.32^n$ where $n = width$, the runtime is $O(m^2 \cdot n^2 \cdot (1.32^n)^2)$ where $m = ```min(prefix_sums[i], prefix_sums[j])```
++ Since ```len(prefix_sums)``` worst case is $=n \cdot 1.32^n$ where $n = width$, the runtime is $O(m^2 \cdot n^2 \cdot (1.32^n)^2)$ where $m =$ ```min(prefix_sums[i], prefix_sums[j])```
 
 ### ```calculate_total_ways(conflict_list, height)```
 + Now that we have the conflict list we can now process all of the different combinatinos of a flooring for a given height and width. In this function, we will DP with an initial case of ```dp = [1] * num_rows```. We place a 1 for every intial floorboard pattern because there is only 1 way to make the floorboard with the specific row pattern. At each step in height, it calculates the number of ways to reach a particular row configuration at a particular height, considering all the valid configurations that can precede it.
