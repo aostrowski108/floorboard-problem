@@ -42,3 +42,5 @@ $$A(x) = \frac{B_{1}}{x-r_{1}} + \frac{B_{2}}{x-c_{1}} + \frac{B_{3}}{x-c_{2}} $
 
 $$= -\frac{B_{1}}{r_{1}}(\frac{1}{1 - \frac{x}{r_{1}}}) -\frac{B_{2}}{c_{1}}(\frac{1}{1 - \frac{x}{c_{1}}}) -\frac{B_{3}}{c_{2}}(\frac{1}{1 - \frac{x}{c_{2}}})$$
 
+$$\sum_{n} (-\frac{B_{1}}{r_{1}}) \cdot (\frac{x}{r_{1}})^n \quad + \quad ...$$
+
