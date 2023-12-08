@@ -2,6 +2,7 @@
 
 ## Problem description:
 Consider building a floor out of $(2 \times 1)$ and $(3 \times 1)$ floorboards (length $\times$ width dimesions). For aesthetic reasons, the end of the boards should not line up. For example, the following $(9 \times 3)$ floor is not acceptable due to the alignment shown in red:
+
 ![Example Diagram](https://github.com/aostrowski108/floorboard-problem/blob/main/diagram.png)
 
 There are eight ways of forming an acceptable $(9 \times 3)$ floor, expressed as $F(9,3) = 8$.
@@ -28,7 +29,7 @@ Calculate $F(32,10)$
 + The runtime of this function $O(m^2 \cdot n)$ where $m =$ ```len(prefix_sums)``` and $n =$ ```min(len(prefix_sums[i]), prefix_sums[j])```
 
 ### ```calculate_total_ways(conflict_list, height)```
-+ Now that we have the conflict list we can now process all of the different combinatinos of a flooring for a given height and width. In this function, we will DP with an initial case of ```dp = [1] * num_rows```. We do place a 1 for every row because there is only 1 way to make the floorboard with the specific row pattern. At each step in height, it calculates the number of ways to reach a particular row configuration at a particular height, considering all the valid configurations that can precede it.
++ Now that we have the conflict list we can now process all of the different combinatinos of a flooring for a given height and width. In this function, we will DP with an initial case of ```dp = [1] * num_rows```. We place a 1 for every intial floorboard pattern because there is only 1 way to make the floorboard with the specific row pattern. At each step in height, it calculates the number of ways to reach a particular row configuration at a particular height, considering all the valid configurations that can precede it.
 
 + As a general case, we can think of ```dp[x] = y```. In this scenario, y indicates the total number of ways to build the floor up to a certain height, with the last row being the row configuration corresponding to index x. It's the accumulated count of all valid stacking sequences of rows that end with this particular row configuration.
 
