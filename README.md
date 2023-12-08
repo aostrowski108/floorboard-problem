@@ -20,12 +20,16 @@ Calculate $F(32,10)$
 ### ```generate_prefix_sum(row)```
 + Now that we have every possible combination of rows for a given width, we will create a prefix sum based off of the sum of the floorboards used so far. We store these into a set for the $O(1)$ look up time which we will utilize in ```generate_conflict_list(prefix_sums)```
 
-+ The runtime of this is...
++ The runtime of this is $O(n)$ where $n =$ ```len(row)``` 
 
 ### ```generate_conflict_list(prefix_sums)```
 + Since we have every possible row as a prefix sum, we can calculate a list for all viable patterns that can be adjacent to the row. To do this, we will loop through every prefix sum and check if at any point the two sets are disjoint. If they are, we know that they are a viable adjacent pattern and add it to the list. We will do this for every prefix sum and return a list of lists.
 
-+ The runtime of this algorithm $O(m^2 \cdot n)$ where $m =$ ```len(prefix_sums)``` and $n =$ ```min(len(prefix_sums[i]), prefix_sums[j])```
++ The runtime of this function $O(m^2 \cdot n)$ where $m =$ ```len(prefix_sums)``` and $n =$ ```min(len(prefix_sums[i]), prefix_sums[j])```
 
 ### ```calculate_total_ways(conflict_list, height)```
-+ 
++ Now that we have the conflict list we can now process all of the different combinatinos of a flooring for a given height and width. In this function, we will DP with an initial case of ```dp = [1] * num_rows```. We do place a 1 for every row because there is only 1 way to make the floorboard with the specific row pattern. At each step in height, it calculates the number of ways to reach a particular row configuration at a particular height, considering all the valid configurations that can precede it.
+
++ As a general case, we can think of ```dp[x] = y```. In this scenario, y indicates the total number of ways to build the floor up to a certain height, with the last row being the row configuration corresponding to index x. It's the accumulated count of all valid stacking sequences of rows that end with this particular row configuration.
+
++ The runtime of this function $O(m \cdot n \cdot k)$ where $m = $ ```len(height)```, $n = $ ```len(conflict_list)```, and $k = $ ```conflict_list[i]```
