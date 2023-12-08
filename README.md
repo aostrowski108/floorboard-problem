@@ -10,11 +10,14 @@ Calculate $F(32,10)$
 
 ## Solution
 
-### ```python generate_rows(width)```
+### ```generate_rows(width)```
 + The solution to this problem involves an algorithm that uses simulation along with dynamic programming. Given that we are trying to find all acceptable ways of designing a floor of a specific height and width with an acceptable pattern, the first step is to find all possible rows that can be made of a given width. 
 
 + This function works by taking in a width and then simulating by adding tiles with a width of either 2 and/or 3 until we reach a base case of 0 or 1. By returning ```[[]]``` in the 0 base case, we provide a way for the recursive calls to append floorboards (of lengths 2 or 3) to this empty combination. By returning ```[]``` in the base case of 1, we ensure that it is an invalid combination and nothing will be appended.
 
 + The runtime of this function...
 
-### ```python generate_prefix_sum(row)```
+### ```generate_prefix_sum(row)```
++ Now that we have every possible combination of rows for a given width, we will create a prefix sum based off of the sum of the floorboards used so far. We store these into a set for the $O(1)$ look up time which we will utilize in ```generate_prefix_sum(row)```
+
++ The runtime of this is...
