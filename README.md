@@ -23,7 +23,7 @@ Calculate $F(32,10)$
 
 + The runtime of this is $O(n)$ where $n =$ ```len(row)``` 
 
-+ Since we use this function for every row the ```[generate_prefix_sum(row) for row in rows]``` portion of this algorithm will have a worst case runtime of $O(n \cdot 1.32^n \cdot m)$ where $n =$ ```width``` and $m =$ ```len(row)```
++ Since we use this function for every row the ```[generate_prefix_sum(row) for row in rows]``` portion of this algorithm will have a worst case runtime of $O(m \cdot n \cdot 1.32^n)$ where $n =$ ```width``` and $m =$ ```len(row)```
 
 ### ```generate_conflict_list(prefix_sums)```
 + Since we have every possible row as a prefix sum, we can calculate a list for all viable patterns that can be adjacent to the row. To do this, we will loop through every prefix sum and check if at any point the two sets are disjoint. If they are, we know that they are a viable adjacent pattern and add it to the list. We will do this for every prefix sum and return a list of lists.
