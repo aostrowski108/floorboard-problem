@@ -24,6 +24,11 @@ $$A(x) - x^2A(x) - x^3A(x) = x + x^2$$
 
 $$A(x) = \frac{x+x^2}{1-x^2-x^3}$$
 
-$$1 - x^2 - x^3$$ has roots:
+$$1 - x^2 - x^3 \text{has roots:}$$
 
-$$\frac{1}{3} \left(-1 + \left(\frac{1}{2} \left(25 - 3 \sqrt{69}\right)\right)^{\frac{1}{3}} + \left(\frac{1}{2} \left(25 + 3 \sqrt{69}\right)\right)^{\frac{1}{3}}\right)$$
+$$r_{1} = \frac{1}{3} \left(-1 + \left(\frac{1}{2} \left(25 - 3 \sqrt{69}\right)\right)^{\frac{1}{3}} + \left(\frac{1}{2} \left(25 + 3 \sqrt{69}\right)\right)^{\frac{1}{3}}\right)$$
+
+$$c_{1} =  -\frac{1}{3} + \frac{1}{6}i \left(i + \sqrt{3}\right) \left(\frac{1}{2} \left(25 - 3\sqrt{69}\right)\right)^{\frac{1}{3}} - \frac{1}{6} \left(1 + i\sqrt{3}\right) \left(\frac{1}{2} \left(25 + 3\sqrt{69}\right)\right)^{\frac{1}{3}}$$
+
+$$c_{2} = -\frac{1}{3} - \frac{1}{6} \left(1 + i\sqrt{3}\right) \left(\frac{1}{2} \left(25 - 3\sqrt{69}\right)\right)^{\frac{1}{3}} + \frac{1}{6}i \left(i + \sqrt{3}\right) \left(\frac{1}{2} \left(25 + 3\sqrt{69}\right)\right)^{\frac{1}{3}}$$
+
