@@ -25,7 +25,7 @@ Calculate $F(32,10)$
 ### ```generate_conflict_list(prefix_sums)```
 + Since we have every possible row as a prefix sum, we can calculate a list for all viable patterns that can be adjacent to the row. To do this, we will loop through every prefix sum and check if at any point the two sets are disjoint. If they are, we know that they are a viable adjacent pattern and add it to the list. We will do this for every prefix sum and return a list of lists.
 
-+ The runtime of this algorithm $O(m^2 \c_dot n)$ where $m = len(prefix_sums)$ and $n = min(len(prefix_sums[i]), prefix_sums[j])$
++ The runtime of this algorithm $O(m^2 \c_dot n)$ where $m =$ ```len(prefix_sums)``` and $n =$ ```min(len(prefix_sums[i]), prefix_sums[j])```
 
 ### ```calculate_total_ways(conflict_list, height)```
 + 
