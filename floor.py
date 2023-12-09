@@ -48,4 +48,3 @@ def count_patterns(width, height):
     return calculate_total_ways(conflict_list, height)
 
 print(count_patterns(32, 10))
-
