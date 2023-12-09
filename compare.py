@@ -11,7 +11,6 @@ def percent_change(old_value, new_value):
     return change * 100
 
 def test_runtimes(runs):
-    #testing constant heights
     average_runtime = 0
     for _ in range(runs):
         start = time.time()
