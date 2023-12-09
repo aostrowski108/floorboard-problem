@@ -52,7 +52,9 @@ $$\text{But since we started our index at 0 we need to add one to all of our n u
 
 $$= (-B_{1})(\frac{1}{r_{1}})^{n+2} + (-B_{2})(\frac{1}{c_{1}})^{n+2} + (-B_{3})(\frac{1}{c_{2}})^{n+2}$$
 
-$$\text{As a result, our growth factor is } \frac{1}{r_{1}} \text{ or about } 3.12$$
+$$\text{As a result, our growth factor is } \frac{1}{r_{1}} \text{ or about } 1.32$$
+
+$$\text{Finally, the runtime of this function is } O(n \cdot 1.32^n)$$
 
 
 
