@@ -31,9 +31,9 @@ Calculate $F(32,10)$
 + Since ```len(prefix_sums)``` worst case is $=n \cdot 1.32^n$ where $n = width$, the runtime is $O(m \cdot n^2 \cdot (1.32^n)^2)$ where $m =$ ```min(prefix_sums[i], prefix_sums[j])```
 
 ### ```calculate_total_ways(conflict_list, height)```
-+ Now that we have the conflict list we can now process all of the different combinatinos of a flooring for a given height and width. In this function, we will DP with an initial case of ```dp = [1] * num_rows```. We place a 1 for every intial floorboard pattern because there is only 1 way to make the floorboard with the specific row pattern. At each step in height, it calculates the number of ways to reach a particular row configuration at a particular height, considering all the valid configurations that can precede it.
++ Now that we have the conflict list we can now process all of the different combinatinos of a flooring for a given height and width. In this function, we will DP with an initial case of ```possible_ways = [1] * num_rows```. We place a 1 for every intial floorboard pattern because there is only 1 way to make the floorboard with the specific row pattern. At each step in height, it calculates the number of ways to reach a particular row configuration at a particular height, considering all the valid configurations that can precede it.
 
-+ As a general case, we can think of ```dp[x] = y```. In this scenario, y indicates the total number of ways to build the floor up to a certain height, with the last row being the row configuration corresponding to index x. It's the accumulated count of all valid stacking sequences of rows that end with this particular row configuration.
++ As a general case, we can think of ```possible_ways[x] = y```. In this scenario, y indicates the total number of ways to build the floor up to a certain height, with the last row being the row configuration corresponding to index x. It's the accumulated count of all valid stacking sequences of rows that end with this particular row configuration.
 
 + Since ```len(conflict_list)``` and ```len(conflict_list[i])``` both have a worst case of $O(n \cdot 1.32^n)$ where $n = width$, the runtime would be $O(m \cdot n^2 \cdot (1.32^n)^2)$ where $m = height$
 
