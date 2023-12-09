@@ -16,7 +16,7 @@ Calculate $F(32,10)$
 
 + This function works by taking in a width and then simulating by adding tiles with a width of either 2 and/or 3 until we reach a base case of 0 or 1. By returning ```[[]]``` in the 0 base case, we provide a way for the recursive calls to append floorboards (of lengths 2 or 3) to this empty combination. By returning ```[]``` in the base case of 1, we ensure that it is an invalid combination and nothing will be appended.
 
-+ The runtime of this function is $O(n \cdot 1.32^n)$ where $n = width$. An in-depth explanation on this here.
++ The runtime of this function is $O(n \cdot 1.32^n)$ where $n = width$. An in-depth explanation on this [here](https://github.com/aostrowski108/floorboard-problem/blob/main/runtime.md).
 
 ### ```generate_prefix_sum(row)```
 + Now that we have every possible combination of rows for a given width, we will create a prefix sum based off of the sum of the floorboards used so far. We store these into a set for the $O(1)$ look up time which we will utilize in ```generate_conflict_list(prefix_sums)```
