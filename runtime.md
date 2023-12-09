@@ -58,7 +58,7 @@ $$\text{Finally, the runtime of this function is } O(n \cdot 1.32^n)$$
 
 # Verification of Overall Runtime
 
-"To verify the overall runtime of our function, I also conducted empirical runtime tests in compare.py. In this file, I compared the ratios of the theoretical and actual runtime of the algorithm with small changes in height and width. After conducting multiple runs and tests, it appears that my function consistently falls within 5% of the $O(m \cdot n^2 \cdot (1.32^n)^2)$ runtime."
+"To verify the overall runtime of our function, I also conducted empirical runtime tests in compare.py. In this file, I compared the ratios of the theoretical and actual runtime of the algorithm with small changes in height and width. After conducting multiple runs and tests, it appears that my function consistently falls within 5% of the $O(m \cdot n^2 \cdot (1.32^n)^2)$ runtime.
 
 
 

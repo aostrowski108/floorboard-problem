@@ -44,7 +44,7 @@ def test_runtimes(runs):
     print("ratio % change with small change in height", percent_change(actual_height_ratio, emp_height_ratio))
 
     
-test_runtimes(3)
+test_runtimes(10)
 
 
 
