@@ -1,0 +1,15 @@
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/bin/Debug/net8.0/c-sharp
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/bin/Debug/net8.0/c-sharp.deps.json
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/bin/Debug/net8.0/c-sharp.runtimeconfig.json
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/bin/Debug/net8.0/c-sharp.dll
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/bin/Debug/net8.0/c-sharp.pdb
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/c-sharp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/c-sharp.AssemblyInfoInputs.cache
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/c-sharp.AssemblyInfo.cs
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/c-sharp.csproj.CoreCompileInputs.cache
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/c-sharp.sourcelink.json
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/c-sharp.dll
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/refint/c-sharp.dll
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/c-sharp.pdb
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/c-sharp.genruntimeconfig.cache
+/Users/alexostrowski/Documents/leetcode/floor_problem/c-sharp/obj/Debug/net8.0/ref/c-sharp.dll
